@@ -1,6 +1,5 @@
 package com.example.todo_friend.service;
 
-import com.example.todo_friend.global.dto.request.FriendRequest;
 import com.example.todo_friend.global.entity.RequestList;
 import com.example.todo_friend.global.repositaory.RequestListRepository;
 import lombok.RequiredArgsConstructor;
@@ -11,10 +10,6 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 public class RequestListServiceImpl implements RequestListService{
     private final RequestListRepository requestListRepository;
-    @Override
-    public Mono<RequestList> sendRequest(FriendRequest request) {
-        return requestListRepository.save(request.toEntity());
-    }
 
     @Override
     public Mono<RequestList> respondToRequest(Long id) {

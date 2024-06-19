@@ -1,6 +1,5 @@
 package com.example.todo_friend.service;
 
-import com.example.todo_friend.global.dto.request.FriendRequest;
 import com.example.todo_friend.global.entity.RequestList;
 import com.example.todo_friend.global.repositaory.RequestListRepository;
 import org.junit.jupiter.api.BeforeEach;
